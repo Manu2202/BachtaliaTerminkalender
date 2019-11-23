@@ -76,7 +76,12 @@ public class EventDetailsActivity extends AppCompatActivity {
 
         //Get the event
         int position = (int) intent.getSerializableExtra("position");
+        int fileID = (int) intent.getSerializableExtra("fileID");
         eDB = new EventDatabase();
+
+        // Generate the events
+        eDB.generateEvents(this, fileID);
+
         eventDate = eDB.getEventdateList()[position];
         event = eDB.getEvent(eventDate);
 

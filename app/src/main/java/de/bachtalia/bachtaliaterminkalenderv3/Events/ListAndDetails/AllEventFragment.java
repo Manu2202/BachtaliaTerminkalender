@@ -57,6 +57,7 @@ public class AllEventFragment extends ListFragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent detailsIntent = new Intent(getActivity(), EventDetailsActivity.class);
                 detailsIntent.putExtra("position", position);
+                detailsIntent.putExtra("fileID", R.raw.auftrittsplanall);
                 startActivity(detailsIntent);
             }
         });

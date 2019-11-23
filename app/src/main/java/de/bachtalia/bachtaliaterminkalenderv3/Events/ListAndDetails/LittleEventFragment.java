@@ -45,15 +45,13 @@ public class LittleEventFragment extends ListFragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        Log.d("Fragment", "In Little Event");
-
-
         // Set on Click Listener on the ListView
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent detailsIntent = new Intent(getActivity(), EventDetailsActivity.class);
                 detailsIntent.putExtra("position", position);
+                detailsIntent.putExtra("fileID", R.raw.auftrittsplankh);
                 startActivity(detailsIntent);
             }
         });
