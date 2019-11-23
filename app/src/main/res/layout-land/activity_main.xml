@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="screen">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/background_light"
+                android:padding="10dp"
+                android:src="@drawable/calendar" />
+
+            <ImageButton
+                android:id="@+id/imFacebook"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:padding="10dp"
+                android:src="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/imInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:padding="5dp"
+                app:srcCompat="@drawable/insta_icon" />
+
+            <ImageButton
+                android:id="@+id/imWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:padding="5dp"
+                android:src="@drawable/website" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

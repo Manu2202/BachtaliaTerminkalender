@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_allEvents"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Alle Events" />
+    <item
+        android:id="@+id/nav_big_events"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Großer Hofstaat" />
+    <item
+        android:id="@+id/nav_little_Events"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Kleiner Hofstaat" />
+
+</menu>
