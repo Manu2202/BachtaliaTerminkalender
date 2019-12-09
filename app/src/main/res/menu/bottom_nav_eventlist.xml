@@ -3,15 +3,15 @@
 
     <item
         android:id="@+id/nav_allEvents"
-        android:icon="@drawable/ic_event_note_black_24dp"
+        android:icon="@drawable/cal_icon"
         android:title="Alle Events" />
     <item
         android:id="@+id/nav_big_events"
-        android:icon="@drawable/ic_person_black_24dp"
+        android:icon="@drawable/gh_icon"
         android:title="Großer Hofstaat" />
     <item
         android:id="@+id/nav_little_Events"
-        android:icon="@drawable/ic_person_black_24dp"
+        android:icon="@drawable/kh_icon"
         android:title="Kleiner Hofstaat" />
 
 </menu>

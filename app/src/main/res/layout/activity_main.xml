@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
                 android:padding="10dp"
-                app:srcCompat="@drawable/calendar" />
+                app:srcCompat="@drawable/calendar_icon" />
 
             <ImageButton
                 android:id="@+id/imFacebook"
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
                 android:padding="10dp"
-                app:srcCompat="@drawable/facebook" />
+                app:srcCompat="@drawable/facebook_icon" />
 
             <ImageButton
                 android:id="@+id/imInstagram"
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
                 android:padding="10dp"
-                app:srcCompat="@drawable/insta_icon" />
+                app:srcCompat="@drawable/instagram_icon" />
 
             <ImageButton
                 android:id="@+id/imWebsite"
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
                 android:padding="5dp"
-                app:srcCompat="@drawable/website" />
+                app:srcCompat="@drawable/web_icon" />
 
         </LinearLayout>
     </ScrollView>

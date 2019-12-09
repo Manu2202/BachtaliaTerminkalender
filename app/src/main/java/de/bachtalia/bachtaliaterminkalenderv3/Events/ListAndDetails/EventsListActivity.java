@@ -38,8 +38,7 @@ public class EventsListActivity extends AppCompatActivity {
 
     private AllEventFragment allEventFragment;
     private BottomNavigationView bottomNav;
-    private static boolean firstCall = true;
-    private static Fragment lastFragment;
+    private Fragment lastFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,18 +52,19 @@ public class EventsListActivity extends AppCompatActivity {
 
        allEventFragment = new AllEventFragment();
 
-        // Select Start Choosen bottomNavFragment (only on first call)
-        if(firstCall) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,
-                    allEventFragment).commit();
-            firstCall = false;
-            lastFragment = allEventFragment;
-        }else{
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,
-                    lastFragment).commit();
-        }
+
+       lastFragment = allEventFragment;
+
+
     }
-    
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,
+                lastFragment).commit();
+    }
 
     /*
      * Methods for initializing the menu and select the choosen Item
@@ -135,7 +135,7 @@ public class EventsListActivity extends AppCompatActivity {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 
             // finally change the color
-            window.setStatusBarColor(ContextCompat.getColor(activity,R.color.navy));
+            window.setStatusBarColor(ContextCompat.getColor(activity,R.color.statusbarblue));
         }catch(Exception e){
             e.printStackTrace();
             Log.e("ChangeStatusbarColor", "Error while changing the color of the Statusbar");

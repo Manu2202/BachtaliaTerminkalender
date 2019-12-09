@@ -25,7 +25,7 @@
                 android:layout_gravity="center"
                 android:background="@android:color/background_light"
                 android:padding="10dp"
-                android:src="@drawable/calendar" />
+                android:src="@drawable/calendar_icon" />
 
             <ImageButton
                 android:id="@+id/imFacebook"
@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/background_light"
                 android:padding="10dp"
-                android:src="@drawable/facebook" />
+                android:src="@drawable/facebook_icon" />
 
             <ImageButton
                 android:id="@+id/imInstagram"
@@ -42,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/background_light"
                 android:padding="5dp"
-                app:srcCompat="@drawable/insta_icon" />
+                app:srcCompat="@drawable/instagram_icon" />
 
             <ImageButton
                 android:id="@+id/imWebsite"
@@ -50,7 +50,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/background_light"
                 android:padding="5dp"
-                android:src="@drawable/website" />
+                android:src="@drawable/web_icon" />
 
         </LinearLayout>
     </HorizontalScrollView>

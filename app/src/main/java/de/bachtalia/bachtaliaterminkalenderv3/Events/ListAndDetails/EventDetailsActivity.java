@@ -265,7 +265,7 @@ public class EventDetailsActivity extends AppCompatActivity {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 
             // finally change the color
-            window.setStatusBarColor(ContextCompat.getColor(activity, R.color.navy));
+            window.setStatusBarColor(ContextCompat.getColor(activity, R.color.statusbarblue));
         } catch (Exception e) {
             e.printStackTrace();
             Log.e("ChangeStatusbarColor", "Error while changing the color of the Statusbar");
