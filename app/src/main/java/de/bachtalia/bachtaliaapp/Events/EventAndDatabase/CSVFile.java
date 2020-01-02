@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase;
+package de.bachtalia.bachtaliaapp.Events.EventAndDatabase;
 
 import java.io.BufferedReader;
 import java.io.IOException;

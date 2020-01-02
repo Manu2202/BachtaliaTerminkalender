@@ -1,14 +1,13 @@
-package de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase;
+package de.bachtalia.bachtaliaapp.PackinglistDatabase;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.R;
 
 
 /*

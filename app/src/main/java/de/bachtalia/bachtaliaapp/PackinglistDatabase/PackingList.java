@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase;
+package de.bachtalia.bachtaliaapp.PackinglistDatabase;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -24,9 +24,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase.DBHelper;
-import de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase.PackingAddDialog;
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.R;
 
 public class PackingList extends AppCompatActivity {
 

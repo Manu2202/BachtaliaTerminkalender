@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.ListAndDetails;
+package de.bachtalia.bachtaliaapp.Events.ListAndDetails;
 
 /*
  * Created by Manuel Lanzinger on 17. Dezember 2018.
@@ -16,8 +16,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.Event;
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.Event;
+import de.bachtalia.bachtaliaapp.R;
 
 public class EventAdapter extends BaseAdapter {
 
@@ -75,14 +75,17 @@ public class EventAdapter extends BaseAdapter {
 
         //More Info if phone is in Landscape Mode
         if (tvTime != null && tvLocation != null) {
-            tvTime.setText(formatTime(event.getDate()));
+            if(event.getDate().get(Calendar.HOUR_OF_DAY) == 2 && event.getDate().get(Calendar.MINUTE) == 59)
+                tvTime.setText("Keine Zeit");
+            else
+                tvTime.setText(formatTime(event.getDate()));
             tvLocation.setText(event.getLocation() + ": " + event.getStreet() + " " + event.getCity());
         }
         return convertView;
     }
 
     /*
-     *Convert the Calendar Date in a String to set the TextView for the Date
+     * Convert the Calendar Date in a String to set the TextView for the Date
      */
     private static String formatDate(Calendar date){
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.YYYY");

@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Contact;
+package de.bachtalia.bachtaliaapp.Contact;
 
 /*
  * Created by Manuel Lanzinger on 23. Dezember 2018.
@@ -6,7 +6,6 @@ package de.bachtalia.bachtaliaterminkalenderv3.Contact;
  */
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.R;
 
 public class ContactAdapter extends BaseAdapter {
 

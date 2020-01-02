@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3;
+package de.bachtalia.bachtaliaapp;
 
 import org.junit.Test;
 

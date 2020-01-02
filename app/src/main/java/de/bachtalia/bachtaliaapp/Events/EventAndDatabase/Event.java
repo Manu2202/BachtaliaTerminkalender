@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase;
+package de.bachtalia.bachtaliaapp.Events.EventAndDatabase;
 
 /*
  * Created by Manuel Lanzinger on 17. Dezember 2018.

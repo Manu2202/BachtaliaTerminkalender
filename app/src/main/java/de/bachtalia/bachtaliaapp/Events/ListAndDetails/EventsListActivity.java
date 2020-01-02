@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.ListAndDetails;
+package de.bachtalia.bachtaliaapp.Events.ListAndDetails;
 
 /*
  * Created by Manuel Lanzinger on 17. Dezember 2018.
@@ -7,32 +7,21 @@ package de.bachtalia.bachtaliaterminkalenderv3.Events.ListAndDetails;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
-import de.bachtalia.bachtaliaterminkalenderv3.Contact.ContactsActivity;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.Event;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.EventDatabase;
-import de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase.PackingList;
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.Contact.ContactsActivity;
+import de.bachtalia.bachtaliaapp.PackinglistDatabase.PackingList;
+import de.bachtalia.bachtaliaapp.R;
 
 public class EventsListActivity extends AppCompatActivity {
 

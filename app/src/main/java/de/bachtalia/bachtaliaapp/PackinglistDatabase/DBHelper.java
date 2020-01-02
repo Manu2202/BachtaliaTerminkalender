@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase;
+package de.bachtalia.bachtaliaapp.PackinglistDatabase;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -1,24 +1,20 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.ListAndDetails;
+package de.bachtalia.bachtaliaapp.Events.ListAndDetails;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.Event;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.EventDatabase;
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.Event;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.EventDatabase;
+import de.bachtalia.bachtaliaapp.R;
 
 public class LittleEventFragment extends ListFragment {
 

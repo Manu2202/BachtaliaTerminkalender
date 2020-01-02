@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.ListAndDetails;
+package de.bachtalia.bachtaliaapp.Events.ListAndDetails;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,11 +23,11 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.Event;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.EventDatabase;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.HomeEvent;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase.RoadEvent;
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.Event;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.EventDatabase;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.HomeEvent;
+import de.bachtalia.bachtaliaapp.Events.EventAndDatabase.RoadEvent;
+import de.bachtalia.bachtaliaapp.R;
 
 /*
  * Created by Manuel Lanzinger on 21. Dezember 2018.
@@ -124,10 +124,10 @@ public class EventDetailsActivity extends AppCompatActivity {
      */
     private void setRoadEventSpecial(RoadEvent event) {
         tvEntryBus.setText("Bus Abfahrt: ");
-        if (event.getBusDepature() != null)
-            tvEntryBusTime.setText(formatTime(event.getBusDepature()));
+        if (event.getBusDepature().get(Calendar.HOUR_OF_DAY)== 2 && event.getBusDepature().get(Calendar.MINUTE) == 59)
+            tvEntryBusTime.setText("Noch nicht sicher.");
         else
-            tvEntryBusTime.setText("Abfahrt Bus ist noch nicht bekannt.");
+            tvEntryBusTime.setText(formatTime(event.getBusDepature()));
     }
 
     private void setHomeEventSpecial(HomeEvent event) {
@@ -141,7 +141,11 @@ public class EventDetailsActivity extends AppCompatActivity {
     private void setInfos() {
         tvEventName.setText(event.getName());
         tvCalendarDate.setText(formatDate(event.getDate()));
-        tvTime.setText(formatTime(event.getDate()));
+        // Special TIme to know "no dep time available"
+        if(event.getDate().get(Calendar.HOUR_OF_DAY) == 2 && event.getDate().get(Calendar.MINUTE) == 59)
+            tvTime.setText("Keine Zeit bekannt.");
+        else
+            tvTime.setText(formatTime(event.getDate()));
         tvLocationName.setText(event.getLocation());
         tvStreet.setText(event.getStreet());
         tvCity.setText(event.getCity());

@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Contact;
+package de.bachtalia.bachtaliaapp.Contact;
 
 /*
  * Created by Manuel Lanzinger on 27. Dezember 2018.

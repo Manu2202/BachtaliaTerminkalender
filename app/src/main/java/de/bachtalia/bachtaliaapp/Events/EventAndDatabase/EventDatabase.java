@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Events.EventAndDatabase;
+package de.bachtalia.bachtaliaapp.Events.EventAndDatabase;
 /*
  * Created by Manuel Lanzinger on 17. Dezember 2018.
  * For the project: Bachtalia Terminkalender.
@@ -14,8 +14,6 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import de.bachtalia.bachtaliaterminkalenderv3.R;
 
 public class EventDatabase {
 

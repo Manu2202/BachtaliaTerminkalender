@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3.LoginAndMain;
+package de.bachtalia.bachtaliaapp.LoginAndMain;
 
 /*
  * Created by Manuel Lanzinger on 17. Dezember 2018.
@@ -21,13 +21,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
-import java.io.InputStream;
 import java.util.List;
 
-import de.bachtalia.bachtaliaterminkalenderv3.Contact.ContactsActivity;
-import de.bachtalia.bachtaliaterminkalenderv3.Events.ListAndDetails.EventsListActivity;
-import de.bachtalia.bachtaliaterminkalenderv3.PackinglistDatabase.PackingList;
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.Contact.ContactsActivity;
+import de.bachtalia.bachtaliaapp.Events.ListAndDetails.EventsListActivity;
+import de.bachtalia.bachtaliaapp.PackinglistDatabase.PackingList;
+import de.bachtalia.bachtaliaapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

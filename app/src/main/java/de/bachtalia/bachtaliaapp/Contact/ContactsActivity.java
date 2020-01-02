@@ -1,8 +1,7 @@
-package de.bachtalia.bachtaliaterminkalenderv3.Contact;
+package de.bachtalia.bachtaliaapp.Contact;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,12 +10,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.TableRow;
 import android.widget.Toast;
 
-import de.bachtalia.bachtaliaterminkalenderv3.R;
+import de.bachtalia.bachtaliaapp.R;
 
 /*
  * Created by Manuel Lanzinger on 23. Dezember 2018.

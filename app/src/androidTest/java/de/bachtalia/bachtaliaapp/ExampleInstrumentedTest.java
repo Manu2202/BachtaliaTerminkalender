@@ -1,4 +1,4 @@
-package de.bachtalia.bachtaliaterminkalenderv3;
+package de.bachtalia.bachtaliaapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
