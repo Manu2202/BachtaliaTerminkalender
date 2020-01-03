@@ -41,9 +41,6 @@ public class BigEventFragment extends ListFragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        Log.d("Fragment", "In Big Event");
-
-
         // Set on Click Listener on the ListView
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

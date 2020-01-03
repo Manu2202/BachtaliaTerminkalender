@@ -18,7 +18,6 @@ import de.bachtalia.bachtaliaapp.R;
 
 public class LittleEventFragment extends ListFragment {
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         EventDatabase eventDbLittle = new EventDatabase();
